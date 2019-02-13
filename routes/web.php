@@ -12,7 +12,7 @@
 */
 Route::group(['middleware' => 'auth'], function(){
     
-Route::get('/', 'HomeController@getHome');
+
 
 /*Route::get('auth/login', function () {
     return view('auth.login');
@@ -30,6 +30,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
